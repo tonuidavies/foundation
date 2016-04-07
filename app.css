@@ -1,0 +1,278 @@
+@import "bourbon";
+@import url(https://fonts.googleapis.com/css?family=Lobster|Josefin+Sans|Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans);
+
+/*$green: #2ea994;*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+#hero {
+    padding-top: 10%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    color: #ffffff;
+}
+
+/*
+@media screen and (max-width: 63.9375em) and (min-width: 40em)
+}
+*/
+
+.HeroContainer {
+    background-image: url(/assets/img/hhero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.HeroContainer .menu {
+    text-align: center;
+    text-align: -webkit-center;
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+.HeroContainer .menu img:hover {}
+ul {
+    text-align: -webkit-center;
+    font-size: 20px;
+}
+#hero .warning hollow button {
+    font-size: 20px;
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #hero .Hfoot {
+        margin-top: 3%;
+    }
+    .HeroContainer {
+        background-image: url(/assets/img/hero.jpg);
+        /*
+        background-size: cover;
+background-repeat: no-repeat;
+*/
+        height: 50vh;
+    }
+}
+#hero .social img {
+    ;
+    padding: 0 1% 0 0;
+    text-decoration-color: red;
+}
+#hero .social:hover {
+    /*    color: #958532;*/
+    color: red;
+}
+#about {
+    background-color: #dfe2ef;
+    padding: 2% 0 2% 0;
+    text-align: center;
+    font-family: 'Poiret+One';
+}
+#about .content-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabs-content {
+    background: #dfe2ef;
+    transition: all 0.5s ease;
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+}
+#portfolio {
+    text-align: center;
+    padding: 5% 0 9% 0;
+}
+/*
+#portfolio #port:hover {
+    @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+    content: attr("Delani Studios");
+}
+*/
+#contact {
+    text-align: center;
+    padding: 3% 2% 2% 2%;
+    background-color: #dfe2ef;
+    font-family: 'Poiret+One';
+}
+form {
+    max-width: 900px;
+    text-align: center;
+    margin: 20px auto;
+}
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    @include border-radius(8px);
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    @include box-shadow(0 1px 1px rgba(black, 0.1));
+    resize: none;
+}
+&:focus {
+    @include box-shadow(0 0px 2px rgba($red, 1)!important);
+}
+#submit-butt {
+    color: white;
+    background: #343458;
+    border-radius: 5%;
+    cursor: pointer;
+}
+#submit-butt:hover {
+    @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+    background-color: #2b9a1d;
+}
+textarea {
+    height: 126px;
+}
+.half {
+    float: left;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.right {
+    width: 100%;
+}
+.left {
+    margin-right: 2%;
+}
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+.cf:after {
+    clear: b
+}
+#footer {
+    font-size: 14px;
+    overflow: hidden;
+    clear: both;
+    padding: 10px 0 15px 0;
+    text-align: center;
+    background-color: #414141;
+    color: white;
+    font-family: 'Poiret+One';
+}
+
+/**
+skills
+**/
+
+.secondary-tabs .tabs {
+    text-align: center;
+}
+.secondary-tabs .tabs i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.secondary-tabs .tabs li {
+    width: 25%;
+}
+.secondary-tabs .tabs li:hover i {
+    font-size: 2rem;
+}
+.secondary-tabs .tabs .tab-title > a {
+    background-color: #ffffff;
+    outline: none;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    color: #1E824C;
+}
+.secondary-tabs .tabs-content {
+    border-top: none;
+}
+.secondary-tabs .tabs-content h3 {
+    margin-left: 2.7rem;
+}
+.secondary-tabs .tabs-content h5 {
+    color: #e74c3c;
+    margin-left: 2.7rem;
+}
+.secondary-tabs .tabs-content p {
+    margin-bottom: 0.2rem;
+}
+.secondary-tabs .tabs-content .switch {
+    margin-bottom: 1rem;
+}
+.progress {
+    margin: 0 auto 2rem auto;
+    padding: 0;
+    width: 90%;
+    height: 18px;
+    overflow: hidden;
+    background: #e5e5e5;
+    border-radius: 6px;
+}
+.meter {
+    position: relative;
+    float: left;
+    min-width: 1%;
+    height: 100%;
+}
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: tahoma, helvetica;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.meter.blue {
+    background: cornflowerblue;
+}
+.meter.red {
+    background: #e74c3c;
+}
+.meter.orange {
+    background: #e67e22;
+}
+.meter.green {
+    background: #2ecc71;
+}
+.meter.purple {
+    background: #9b59b6;
+}
+.meter.brown {
+    background: brown;
+}
+.meter.grey {
+    background: grey;
+}
+.meter.violet {
+    background: violet;
+}
+.meter.indigo {
+    background: indigo;
+}
+.timeline {
+    list-style: none;
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
